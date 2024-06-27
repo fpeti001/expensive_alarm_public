@@ -1,0 +1,25 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="id.oddbit.flutter.facebook_app_events" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="16"
+6-->C:\Users\fpeti\AppData\Local\Pub\Cache\hosted\pub.dev\facebook_app_events-0.19.0\android\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="16" />
+7-->C:\Users\fpeti\AppData\Local\Pub\Cache\hosted\pub.dev\facebook_app_events-0.19.0\android\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.INTERNET" />
+9-->C:\Users\fpeti\AppData\Local\Pub\Cache\hosted\pub.dev\facebook_app_events-0.19.0\android\src\main\AndroidManifest.xml:4:3-64
+9-->C:\Users\fpeti\AppData\Local\Pub\Cache\hosted\pub.dev\facebook_app_events-0.19.0\android\src\main\AndroidManifest.xml:4:20-62
+10
+11    <application>
+11-->C:\Users\fpeti\AppData\Local\Pub\Cache\hosted\pub.dev\facebook_app_events-0.19.0\android\src\main\AndroidManifest.xml:5:3-10:17
+12        <meta-data
+12-->C:\Users\fpeti\AppData\Local\Pub\Cache\hosted\pub.dev\facebook_app_events-0.19.0\android\src\main\AndroidManifest.xml:7:5-9:30
+13            android:name="com.facebook.sdk.CodelessDebugLogEnabled"
+13-->C:\Users\fpeti\AppData\Local\Pub\Cache\hosted\pub.dev\facebook_app_events-0.19.0\android\src\main\AndroidManifest.xml:8:7-62
+14            android:value="true" />
+14-->C:\Users\fpeti\AppData\Local\Pub\Cache\hosted\pub.dev\facebook_app_events-0.19.0\android\src\main\AndroidManifest.xml:9:7-27
+15    </application>
+16
+17</manifest>

@@ -1,0 +1,582 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.igen.expensivealarm"
+4    android:versionCode="13"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:3:5-78
+11-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:3:22-75
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:4:5-80
+12-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:4:22-78
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:5:5-67
+13-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:5:22-65
+14    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+14-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:6:5-81
+14-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:6:22-78
+15    <!-- For apps with targetSDK=31 (Android 12) -->
+16    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+16-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:8:5-78
+16-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:8:22-76
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:9:5-66
+17-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:9:22-64
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:10:5-80
+18-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:10:22-77
+19    <uses-permission android:name="com.android.vending.BILLING" />
+19-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:11:5-67
+19-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:11:22-64
+20    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+20-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:12:5-85
+20-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:12:22-82
+21    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+21-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:13:5-78
+21-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:13:22-76
+22    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+22-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:14:5-95
+22-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:14:23-93
+23
+24    <queries>
+24-->[:file_picker] C:\Users\fpeti\StudioProjects\expensive_alar\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-17:15
+25        <intent>
+25-->[:file_picker] C:\Users\fpeti\StudioProjects\expensive_alar\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-16:18
+26            <action android:name="android.intent.action.GET_CONTENT" />
+26-->[:file_picker] C:\Users\fpeti\StudioProjects\expensive_alar\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-72
+26-->[:file_picker] C:\Users\fpeti\StudioProjects\expensive_alar\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:21-69
+27
+28            <data android:mimeType="*/*" />
+28-->[:file_picker] C:\Users\fpeti\StudioProjects\expensive_alar\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-44
+28-->[:file_picker] C:\Users\fpeti\StudioProjects\expensive_alar\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:19-41
+29        </intent>
+30
+31        <package android:name="com.facebook.katana" />
+31-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:18:9-55
+31-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:18:18-52
+32
+33        <intent>
+33-->[com.android.billingclient:billing:5.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\bebd3ce8fc27034adcce59689f8e7c69\transformed\jetified-billing-5.1.0\AndroidManifest.xml:17:9-19:18
+34            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+34-->[com.android.billingclient:billing:5.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\bebd3ce8fc27034adcce59689f8e7c69\transformed\jetified-billing-5.1.0\AndroidManifest.xml:18:13-91
+34-->[com.android.billingclient:billing:5.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\bebd3ce8fc27034adcce59689f8e7c69\transformed\jetified-billing-5.1.0\AndroidManifest.xml:18:21-88
+35        </intent>
+36    </queries>
+37
+38    <uses-permission android:name="android.permission.VIBRATE" />
+38-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-66
+38-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-63
+39    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- for android -->
+39-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
+39-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:22-76
+40    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+41    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+42    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+43    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+44    <!-- for Samsung -->
+45    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+45-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+45-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
+46    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+46-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+46-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
+47    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+47-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+47-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
+48    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+48-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+48-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
+49    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+49-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+49-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
+50    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+50-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+50-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
+51    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+51-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+51-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
+52    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+52-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+52-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
+53    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+53-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+53-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
+54    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+54-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+54-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
+55    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+55-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+55-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
+56    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+56-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+56-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
+57    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+57-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+57-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
+58    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+58-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+58-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
+59    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+59-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+59-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
+60    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+60-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+60-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\fpeti\.gradle\caches\transforms-3\b0389fa7cbcb973eb70356eb385c55ee\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
+61    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+61-->[com.android.installreferrer:installreferrer:1.0] C:\Users\fpeti\.gradle\caches\transforms-3\25f88bd613b9ced7db1b94c2e88b7562\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
+61-->[com.android.installreferrer:installreferrer:1.0] C:\Users\fpeti\.gradle\caches\transforms-3\25f88bd613b9ced7db1b94c2e88b7562\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
+62
+63    <application
+64        android:name="android.app.Application"
+64-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:18:9-42
+65        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+65-->[androidx.core:core:1.8.0] C:\Users\fpeti\.gradle\caches\transforms-3\2fa18b2f544a798470f6ba6d29f55f60\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+66        android:icon="@mipmap/ic_launcher"
+66-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:19:9-43
+67        android:label="Expensive Alarm"
+67-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:17:9-40
+68        android:supportsRtl="true" >
+68-->[com.facebook.android:facebook-android-sdk:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\fabf904efe0b15604ca6773eb12e4868\transformed\jetified-facebook-android-sdk-15.2.0\AndroidManifest.xml:16:18-44
+69        <activity
+69-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:20:9-43:20
+70            android:name="com.example.expensive_alarm.MainActivity"
+70-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:21:13-41
+71            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+71-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:28:13-163
+72            android:exported="true"
+72-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:25:13-36
+73            android:hardwareAccelerated="true"
+73-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:29:13-47
+74            android:launchMode="singleTop"
+74-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:26:13-43
+75            android:showOnLockScreen="true"
+75-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:22:13-44
+76            android:showWhenLocked="true"
+76-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:23:13-42
+77            android:theme="@style/LaunchTheme"
+77-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:27:13-47
+78            android:turnScreenOn="true"
+78-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:24:13-40
+79            android:windowSoftInputMode="adjustResize" >
+79-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:30:13-55
+80
+81            <!--
+82                 Specifies an Android theme to apply to this Activity as soon as
+83                 the Android process has started. This theme is visible to the user
+84                 while the Flutter UI initializes. After that, this theme continues
+85                 to determine the Window background behind the Flutter UI.
+86            -->
+87            <meta-data
+87-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:35:13-38:17
+88                android:name="io.flutter.embedding.android.NormalTheme"
+88-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:36:15-70
+89                android:resource="@style/NormalTheme" />
+89-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:37:15-52
+90
+91            <intent-filter>
+91-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:39:13-42:29
+92                <action android:name="android.intent.action.MAIN" />
+92-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:40:17-68
+92-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:40:25-66
+93
+94                <category android:name="android.intent.category.LAUNCHER" />
+94-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:41:17-76
+94-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:41:27-74
+95            </intent-filter>
+96        </activity>
+97        <!--
+98             Don't delete the meta-data below.
+99             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+100        -->
+101        <meta-data
+101-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:46:9-48:33
+102            android:name="flutterEmbedding"
+102-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:47:13-44
+103            android:value="2" />
+103-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:48:13-30
+104        <meta-data
+104-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:49:9-107
+105            android:name="com.facebook.sdk.ApplicationId"
+105-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:49:20-65
+106            android:value="@string/facebook_app_id" />
+106-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:49:66-105
+107        <meta-data
+107-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:50:9-111
+108            android:name="com.facebook.sdk.ClientToken"
+108-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:50:20-63
+109            android:value="@string/facebook_client_token" />
+109-->C:\Users\fpeti\StudioProjects\expensive_alar\android\app\src\main\AndroidManifest.xml:50:64-109
+110
+111        <service
+111-->[:cloud_firestore] C:\Users\fpeti\StudioProjects\expensive_alar\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+112            android:name="com.google.firebase.components.ComponentDiscoveryService"
+112-->[:cloud_firestore] C:\Users\fpeti\StudioProjects\expensive_alar\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:18-89
+113            android:directBootAware="true"
+113-->[com.google.firebase:firebase-common:20.3.2] C:\Users\fpeti\.gradle\caches\transforms-3\6e10d488ebcc23afefc866560645fd3c\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+114            android:exported="false" >
+114-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:68:13-37
+115            <meta-data
+115-->[:cloud_firestore] C:\Users\fpeti\StudioProjects\expensive_alar\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+116                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+116-->[:cloud_firestore] C:\Users\fpeti\StudioProjects\expensive_alar\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-134
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[:cloud_firestore] C:\Users\fpeti\StudioProjects\expensive_alar\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+118            <meta-data
+118-->[:firebase_auth] C:\Users\fpeti\StudioProjects\expensive_alar\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+119                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+119-->[:firebase_auth] C:\Users\fpeti\StudioProjects\expensive_alar\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[:firebase_auth] C:\Users\fpeti\StudioProjects\expensive_alar\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+121            <meta-data
+121-->[:firebase_core] C:\Users\fpeti\StudioProjects\expensive_alar\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+122                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+122-->[:firebase_core] C:\Users\fpeti\StudioProjects\expensive_alar\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[:firebase_core] C:\Users\fpeti\StudioProjects\expensive_alar\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:69:13-71:85
+125                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+125-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:70:17-109
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:71:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-firestore:24.6.0] C:\Users\fpeti\.gradle\caches\transforms-3\72364d1d1285fb1570adb110caaa4c93\transformed\jetified-firebase-firestore-24.6.0\AndroidManifest.xml:19:13-21:85
+128                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+128-->[com.google.firebase:firebase-firestore:24.6.0] C:\Users\fpeti\.gradle\caches\transforms-3\72364d1d1285fb1570adb110caaa4c93\transformed\jetified-firebase-firestore-24.6.0\AndroidManifest.xml:20:17-111
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-firestore:24.6.0] C:\Users\fpeti\.gradle\caches\transforms-3\72364d1d1285fb1570adb110caaa4c93\transformed\jetified-firebase-firestore-24.6.0\AndroidManifest.xml:21:17-82
+130        </service>
+131
+132        <receiver
+132-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-15:40
+133            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.DismissedNotificationReceiver"
+133-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-121
+134            android:exported="false" />
+134-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-37
+135        <receiver
+135-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-18:40
+136            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.ScheduledNotificationReceiver"
+136-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-121
+137            android:exported="false" />
+137-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+138        <receiver
+138-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-21:40
+139            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.KeepOnTopActionReceiver"
+139-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-115
+140            android:exported="false" />
+140-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-37
+141        <receiver
+141-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:22:9-35:20
+142            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.RefreshSchedulesReceiver"
+142-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-116
+143            android:exported="false" >
+143-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-37
+144            <intent-filter>
+144-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:25:13-34:29
+145                <category android:name="android.intent.category.DEFAULT" />
+145-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:17-76
+145-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:27-73
+146
+147                <action android:name="android.intent.action.BOOT_COMPLETED" />
+147-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:17-79
+147-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:25-76
+148                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+148-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-86
+148-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:25-83
+149                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+149-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:30:17-84
+149-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:30:25-81
+150                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+150-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:31:17-82
+150-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:31:25-79
+151                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+151-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-82
+151-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:32:25-79
+152                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+152-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-107
+152-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-104
+153            </intent-filter>
+154        </receiver>
+155
+156        <activity
+156-->[:url_launcher_android] C:\Users\fpeti\StudioProjects\expensive_alar\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+157            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+157-->[:url_launcher_android] C:\Users\fpeti\StudioProjects\expensive_alar\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+158            android:exported="false"
+158-->[:url_launcher_android] C:\Users\fpeti\StudioProjects\expensive_alar\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+159            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+159-->[:url_launcher_android] C:\Users\fpeti\StudioProjects\expensive_alar\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+160
+161        <meta-data
+161-->[:facebook_app_events] C:\Users\fpeti\StudioProjects\expensive_alar\build\facebook_app_events\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-14:36
+162            android:name="com.facebook.sdk.CodelessDebugLogEnabled"
+162-->[:facebook_app_events] C:\Users\fpeti\StudioProjects\expensive_alar\build\facebook_app_events\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-68
+163            android:value="true" />
+163-->[:facebook_app_events] C:\Users\fpeti\StudioProjects\expensive_alar\build\facebook_app_events\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-33
+164
+165        <activity
+165-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
+166            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+166-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:30:13-80
+167            android:excludeFromRecents="true"
+167-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:31:13-46
+168            android:exported="true"
+168-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:32:13-36
+169            android:launchMode="singleTask"
+169-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:33:13-44
+170            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+170-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:34:13-72
+171            <intent-filter>
+171-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
+172                <action android:name="android.intent.action.VIEW" />
+172-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
+172-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
+173
+174                <category android:name="android.intent.category.DEFAULT" />
+174-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:17-76
+174-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:27-73
+175                <category android:name="android.intent.category.BROWSABLE" />
+175-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+175-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+176
+177                <data
+177-->[:file_picker] C:\Users\fpeti\StudioProjects\expensive_alar\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-44
+178                    android:host="firebase.auth"
+179                    android:path="/"
+180                    android:scheme="genericidp" />
+181            </intent-filter>
+182        </activity>
+183        <activity
+183-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
+184            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+184-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:48:13-79
+185            android:excludeFromRecents="true"
+185-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:49:13-46
+186            android:exported="true"
+186-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:50:13-36
+187            android:launchMode="singleTask"
+187-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:51:13-44
+188            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+188-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:52:13-72
+189            <intent-filter>
+189-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
+190                <action android:name="android.intent.action.VIEW" />
+190-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
+190-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
+191
+192                <category android:name="android.intent.category.DEFAULT" />
+192-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:17-76
+192-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:27-73
+193                <category android:name="android.intent.category.BROWSABLE" />
+193-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+193-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+194
+195                <data
+195-->[:file_picker] C:\Users\fpeti\StudioProjects\expensive_alar\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-44
+196                    android:host="firebase.auth"
+197                    android:path="/"
+198                    android:scheme="recaptcha" />
+199            </intent-filter>
+200        </activity>
+201
+202        <uses-library
+202-->[androidx.window:window:1.0.0-beta04] C:\Users\fpeti\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+203            android:name="androidx.window.extensions"
+203-->[androidx.window:window:1.0.0-beta04] C:\Users\fpeti\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+204            android:required="false" />
+204-->[androidx.window:window:1.0.0-beta04] C:\Users\fpeti\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+205        <uses-library
+205-->[androidx.window:window:1.0.0-beta04] C:\Users\fpeti\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+206            android:name="androidx.window.sidecar"
+206-->[androidx.window:window:1.0.0-beta04] C:\Users\fpeti\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+207            android:required="false" />
+207-->[androidx.window:window:1.0.0-beta04] C:\Users\fpeti\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+208
+209        <provider
+209-->[com.google.firebase:firebase-common:20.3.2] C:\Users\fpeti\.gradle\caches\transforms-3\6e10d488ebcc23afefc866560645fd3c\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+210            android:name="com.google.firebase.provider.FirebaseInitProvider"
+210-->[com.google.firebase:firebase-common:20.3.2] C:\Users\fpeti\.gradle\caches\transforms-3\6e10d488ebcc23afefc866560645fd3c\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+211            android:authorities="com.igen.expensivealarm.firebaseinitprovider"
+211-->[com.google.firebase:firebase-common:20.3.2] C:\Users\fpeti\.gradle\caches\transforms-3\6e10d488ebcc23afefc866560645fd3c\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+212            android:directBootAware="true"
+212-->[com.google.firebase:firebase-common:20.3.2] C:\Users\fpeti\.gradle\caches\transforms-3\6e10d488ebcc23afefc866560645fd3c\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+213            android:exported="false"
+213-->[com.google.firebase:firebase-common:20.3.2] C:\Users\fpeti\.gradle\caches\transforms-3\6e10d488ebcc23afefc866560645fd3c\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+214            android:initOrder="100" />
+214-->[com.google.firebase:firebase-common:20.3.2] C:\Users\fpeti\.gradle\caches\transforms-3\6e10d488ebcc23afefc866560645fd3c\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+215
+216        <activity
+216-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:22:9-25:66
+217            android:name="com.facebook.FacebookActivity"
+217-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:23:13-57
+218            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+218-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:24:13-96
+219            android:theme="@style/com_facebook_activity_theme" />
+219-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:25:13-63
+220        <activity android:name="com.facebook.CustomTabMainActivity" />
+220-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:26:9-71
+220-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:26:19-68
+221        <activity
+221-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:27:9-41:20
+222            android:name="com.facebook.CustomTabActivity"
+222-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:28:13-58
+223            android:exported="true" >
+223-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:29:13-36
+224            <intent-filter>
+224-->[com.facebook.android:facebook-common:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\6730d065c7cebd9ec9db39435cb46c0c\transformed\jetified-facebook-common-15.2.0\AndroidManifest.xml:31:13-40:29
+225                <action android:name="android.intent.action.VIEW" />
+225-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
+225-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
+226
+227                <category android:name="android.intent.category.DEFAULT" />
+227-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:17-76
+227-->[:awesome_notifications] C:\Users\fpeti\StudioProjects\expensive_alar\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:27-73
+228                <category android:name="android.intent.category.BROWSABLE" />
+228-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+228-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\fpeti\.gradle\caches\transforms-3\addd1e7d7380e6c086f46a0c78155c8a\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+229
+230                <data
+230-->[:file_picker] C:\Users\fpeti\StudioProjects\expensive_alar\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-44
+231                    android:host="cct.com.igen.expensivealarm"
+232                    android:scheme="fbconnect" />
+233            </intent-filter>
+234        </activity>
+235        <!--
+236         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+237         with the application context. This config is merged in with the host app's manifest,
+238         but there can only be one provider with the same authority activated at any given
+239         point; so if the end user has two or more different apps that use Facebook SDK, only the
+240         first one will be able to use the provider. To work around this problem, we use the
+241         following placeholder in the authority to identify each host application as if it was
+242         a completely different provider.
+243        -->
+244        <provider
+244-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:29:9-32:40
+245            android:name="com.facebook.internal.FacebookInitProvider"
+245-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:30:13-70
+246            android:authorities="com.igen.expensivealarm.FacebookInitProvider"
+246-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:31:13-72
+247            android:exported="false" />
+247-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:32:13-37
+248
+249        <receiver
+249-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:34:9-40:20
+250            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+250-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:35:13-86
+251            android:exported="false" >
+251-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:36:13-37
+252            <intent-filter>
+252-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:37:13-39:29
+253                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+253-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:38:17-95
+253-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:38:25-92
+254            </intent-filter>
+255        </receiver>
+256        <receiver
+256-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:41:9-47:20
+257            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+257-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:42:13-118
+258            android:exported="false" >
+258-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:43:13-37
+259            <intent-filter>
+259-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:44:13-46:29
+260                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+260-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:45:17-103
+260-->[com.facebook.android:facebook-core:15.2.0] C:\Users\fpeti\.gradle\caches\transforms-3\e0d828367020254cb63568d3634da41a\transformed\jetified-facebook-core-15.2.0\AndroidManifest.xml:45:25-100
+261            </intent-filter>
+262        </receiver>
+263
+264        <activity
+264-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\fpeti\.gradle\caches\transforms-3\aba8f806953ea3dd8f794da3aeb78a12\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+265            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+265-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\fpeti\.gradle\caches\transforms-3\aba8f806953ea3dd8f794da3aeb78a12\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+266            android:exported="false"
+266-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\fpeti\.gradle\caches\transforms-3\aba8f806953ea3dd8f794da3aeb78a12\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+267            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+267-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\fpeti\.gradle\caches\transforms-3\aba8f806953ea3dd8f794da3aeb78a12\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+268
+269        <receiver
+269-->[com.revenuecat.purchases:purchases-store-amazon:6.4.0] C:\Users\fpeti\.gradle\caches\transforms-3\38936ff48b423a2a47899dd9581820c1\transformed\jetified-purchases-store-amazon-6.4.0\AndroidManifest.xml:8:9-15:20
+270            android:name="com.amazon.device.iap.ResponseReceiver"
+270-->[com.revenuecat.purchases:purchases-store-amazon:6.4.0] C:\Users\fpeti\.gradle\caches\transforms-3\38936ff48b423a2a47899dd9581820c1\transformed\jetified-purchases-store-amazon-6.4.0\AndroidManifest.xml:9:13-66
+271            android:exported="true"
+271-->[com.revenuecat.purchases:purchases-store-amazon:6.4.0] C:\Users\fpeti\.gradle\caches\transforms-3\38936ff48b423a2a47899dd9581820c1\transformed\jetified-purchases-store-amazon-6.4.0\AndroidManifest.xml:10:13-36
+272            android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY" >
+272-->[com.revenuecat.purchases:purchases-store-amazon:6.4.0] C:\Users\fpeti\.gradle\caches\transforms-3\38936ff48b423a2a47899dd9581820c1\transformed\jetified-purchases-store-amazon-6.4.0\AndroidManifest.xml:11:13-79
+273            <intent-filter>
+273-->[com.revenuecat.purchases:purchases-store-amazon:6.4.0] C:\Users\fpeti\.gradle\caches\transforms-3\38936ff48b423a2a47899dd9581820c1\transformed\jetified-purchases-store-amazon-6.4.0\AndroidManifest.xml:12:13-14:29
+274                <action android:name="com.amazon.inapp.purchasing.NOTIFY" />
+274-->[com.revenuecat.purchases:purchases-store-amazon:6.4.0] C:\Users\fpeti\.gradle\caches\transforms-3\38936ff48b423a2a47899dd9581820c1\transformed\jetified-purchases-store-amazon-6.4.0\AndroidManifest.xml:13:17-77
+274-->[com.revenuecat.purchases:purchases-store-amazon:6.4.0] C:\Users\fpeti\.gradle\caches\transforms-3\38936ff48b423a2a47899dd9581820c1\transformed\jetified-purchases-store-amazon-6.4.0\AndroidManifest.xml:13:25-74
+275            </intent-filter>
+276        </receiver>
+277
+278        <activity
+278-->[com.revenuecat.purchases:purchases-store-amazon:6.4.0] C:\Users\fpeti\.gradle\caches\transforms-3\38936ff48b423a2a47899dd9581820c1\transformed\jetified-purchases-store-amazon-6.4.0\AndroidManifest.xml:17:9-20:75
+279            android:name="com.revenuecat.purchases.amazon.purchasing.ProxyAmazonBillingActivity"
+279-->[com.revenuecat.purchases:purchases-store-amazon:6.4.0] C:\Users\fpeti\.gradle\caches\transforms-3\38936ff48b423a2a47899dd9581820c1\transformed\jetified-purchases-store-amazon-6.4.0\AndroidManifest.xml:18:13-97
+280            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+280-->[com.revenuecat.purchases:purchases-store-amazon:6.4.0] C:\Users\fpeti\.gradle\caches\transforms-3\38936ff48b423a2a47899dd9581820c1\transformed\jetified-purchases-store-amazon-6.4.0\AndroidManifest.xml:19:13-96
+281            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+281-->[com.revenuecat.purchases:purchases-store-amazon:6.4.0] C:\Users\fpeti\.gradle\caches\transforms-3\38936ff48b423a2a47899dd9581820c1\transformed\jetified-purchases-store-amazon-6.4.0\AndroidManifest.xml:20:13-72
+282
+283        <meta-data
+283-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\58aa1384bde170d075503b845cfcf44c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+284            android:name="com.google.android.gms.version"
+284-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\58aa1384bde170d075503b845cfcf44c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+285            android:value="@integer/google_play_services_version" />
+285-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\58aa1384bde170d075503b845cfcf44c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+286
+287        <provider
+287-->[androidx.lifecycle:lifecycle-process:2.5.0] C:\Users\fpeti\.gradle\caches\transforms-3\81214651ce37da9dbbe1359b5cde75fe\transformed\jetified-lifecycle-process-2.5.0\AndroidManifest.xml:26:9-34:20
+288            android:name="androidx.startup.InitializationProvider"
+288-->[androidx.lifecycle:lifecycle-process:2.5.0] C:\Users\fpeti\.gradle\caches\transforms-3\81214651ce37da9dbbe1359b5cde75fe\transformed\jetified-lifecycle-process-2.5.0\AndroidManifest.xml:27:13-67
+289            android:authorities="com.igen.expensivealarm.androidx-startup"
+289-->[androidx.lifecycle:lifecycle-process:2.5.0] C:\Users\fpeti\.gradle\caches\transforms-3\81214651ce37da9dbbe1359b5cde75fe\transformed\jetified-lifecycle-process-2.5.0\AndroidManifest.xml:28:13-68
+290            android:exported="false" >
+290-->[androidx.lifecycle:lifecycle-process:2.5.0] C:\Users\fpeti\.gradle\caches\transforms-3\81214651ce37da9dbbe1359b5cde75fe\transformed\jetified-lifecycle-process-2.5.0\AndroidManifest.xml:29:13-37
+291            <meta-data
+291-->[androidx.lifecycle:lifecycle-process:2.5.0] C:\Users\fpeti\.gradle\caches\transforms-3\81214651ce37da9dbbe1359b5cde75fe\transformed\jetified-lifecycle-process-2.5.0\AndroidManifest.xml:31:13-33:52
+292                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+292-->[androidx.lifecycle:lifecycle-process:2.5.0] C:\Users\fpeti\.gradle\caches\transforms-3\81214651ce37da9dbbe1359b5cde75fe\transformed\jetified-lifecycle-process-2.5.0\AndroidManifest.xml:32:17-78
+293                android:value="androidx.startup" />
+293-->[androidx.lifecycle:lifecycle-process:2.5.0] C:\Users\fpeti\.gradle\caches\transforms-3\81214651ce37da9dbbe1359b5cde75fe\transformed\jetified-lifecycle-process-2.5.0\AndroidManifest.xml:33:17-49
+294        </provider> <!-- The activities will be merged into the manifest of the hosting app. -->
+295        <activity
+295-->[com.google.android.play:core-common:2.0.2] C:\Users\fpeti\.gradle\caches\transforms-3\18887527b3d06bd8fde721acf460bb7c\transformed\jetified-core-common-2.0.2\AndroidManifest.xml:14:9-18:65
+296            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+296-->[com.google.android.play:core-common:2.0.2] C:\Users\fpeti\.gradle\caches\transforms-3\18887527b3d06bd8fde721acf460bb7c\transformed\jetified-core-common-2.0.2\AndroidManifest.xml:15:13-93
+297            android:exported="false"
+297-->[com.google.android.play:core-common:2.0.2] C:\Users\fpeti\.gradle\caches\transforms-3\18887527b3d06bd8fde721acf460bb7c\transformed\jetified-core-common-2.0.2\AndroidManifest.xml:16:13-37
+298            android:stateNotNeeded="true"
+298-->[com.google.android.play:core-common:2.0.2] C:\Users\fpeti\.gradle\caches\transforms-3\18887527b3d06bd8fde721acf460bb7c\transformed\jetified-core-common-2.0.2\AndroidManifest.xml:17:13-42
+299            android:theme="@style/Theme.PlayCore.Transparent" />
+299-->[com.google.android.play:core-common:2.0.2] C:\Users\fpeti\.gradle\caches\transforms-3\18887527b3d06bd8fde721acf460bb7c\transformed\jetified-core-common-2.0.2\AndroidManifest.xml:18:13-62
+300
+301        <meta-data
+301-->[com.android.billingclient:billing:5.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\bebd3ce8fc27034adcce59689f8e7c69\transformed\jetified-billing-5.1.0\AndroidManifest.xml:23:9-25:37
+302            android:name="com.google.android.play.billingclient.version"
+302-->[com.android.billingclient:billing:5.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\bebd3ce8fc27034adcce59689f8e7c69\transformed\jetified-billing-5.1.0\AndroidManifest.xml:24:13-73
+303            android:value="5.1.0" />
+303-->[com.android.billingclient:billing:5.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\bebd3ce8fc27034adcce59689f8e7c69\transformed\jetified-billing-5.1.0\AndroidManifest.xml:25:13-34
+304
+305        <activity
+305-->[com.android.billingclient:billing:5.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\bebd3ce8fc27034adcce59689f8e7c69\transformed\jetified-billing-5.1.0\AndroidManifest.xml:27:9-31:75
+306            android:name="com.android.billingclient.api.ProxyBillingActivity"
+306-->[com.android.billingclient:billing:5.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\bebd3ce8fc27034adcce59689f8e7c69\transformed\jetified-billing-5.1.0\AndroidManifest.xml:28:13-78
+307            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+307-->[com.android.billingclient:billing:5.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\bebd3ce8fc27034adcce59689f8e7c69\transformed\jetified-billing-5.1.0\AndroidManifest.xml:29:13-96
+308            android:exported="false"
+308-->[com.android.billingclient:billing:5.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\bebd3ce8fc27034adcce59689f8e7c69\transformed\jetified-billing-5.1.0\AndroidManifest.xml:30:13-37
+309            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+309-->[com.android.billingclient:billing:5.1.0] C:\Users\fpeti\.gradle\caches\transforms-3\bebd3ce8fc27034adcce59689f8e7c69\transformed\jetified-billing-5.1.0\AndroidManifest.xml:31:13-72
+310    </application>
+311
+312</manifest>
