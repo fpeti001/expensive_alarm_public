@@ -1,16 +1,11 @@
 # expensive_alarm
 
-A new Flutter project.
+It's a funny application, almost like a normal alarm except the users need to log in (I used firebase) and pay if they wants to hit the snooze button.
 
-## Getting Started
+# Appearance:
 
-This project is a starting point for a Flutter application.
+| Home                                                                                           | Buy                                                                         |  Alarm                                                                                           | Log in                                                                                            
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |--------------------------------------------------------------------------------------- |
+![](https://github.com/fpeti001/expensive_alarm_public/blob/master/assets/home_screen1.jpg) |  ![](https://github.com/fpeti001/expensive_alarm_public/blob/master/assets/buy_page.jpg) |  ![](https://github.com/fpeti001/expensive_alarm_public/blob/master/assets/alarm_screen.jpg) |  ![](https://github.com/fpeti001/expensive_alarm_public/blob/master/assets/login_page1.jpg) 
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
